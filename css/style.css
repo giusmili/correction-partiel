@@ -1,0 +1,130 @@
+body{
+		font:16px 'Josefin Sans',sans-serif;
+		margin:0;
+		font-size-adjust:0.5;
+		background: #ECECEC;
+	}
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+	h1{
+		width:auto;
+		line-height: 60px;
+		text-align: center;
+		font-weight: 300;
+		font-variant: small-caps;
+		margin:0 0 20px;
+		color:#fff;
+		background: #222;
+		font-family: "Josefin Sans";
+		
+	}
+
+  .content-galerie>img{ 
+    position: absolute; /*Les images vont se superposer*/
+  	left:0;
+  	top:0;
+    display: block; /*Par défaut, elles ne seront pas affichées inverser la valeur*/
+    max-width:100%;
+  	
+  }
+
+
+  .content-galerie{
+  	width:800px;
+  	height: 400px;
+  	position:relative;
+  	margin:0 auto;
+  	overflow: hidden;
+  	border:solid 1px #999;
+  	box-shadow:0 3px 3px #ccc;
+
+
+  }
+  p{
+  	width:200px;
+  	margin:0 auto;
+  	text-align: center;
+  }
+  button{
+    display:block;
+    line-height:2.500rem;
+    text-align:center;
+    background:#3498db;
+    color:#fff;
+    border-radius:3px;
+    border:none;
+    margin:10px auto 0;
+    cursor:pointer;
+    width: 200px;
+    font-size: 1rem;
+    transition-duration:0.6s;
+  }
+  button:hover{
+    background:#2980b9;
+  }
+  /*css pour les photos*/
+   .container{
+      width:620px;
+      margin:0px auto;
+      overflow:hidden;
+      height: 0;
+      opacity:0;
+      transition-duration:0.9s;
+
+  }
+    .box{
+    width:32.25806451612903%;
+    display:block;/*inverser la valeur*/
+    float:left;
+    visibility:visible;/*inverser la valeur*/
+    margin-right:10px;
+    overflow:hidden;
+    border-radius:8px;
+    border:solid 1px #ccc;
+    background: #fff;
+    padding:10px;
+  }
+  .box>img{
+    display: block;
+    width: 100%;
+
+  }
+  .box1-color{
+      transform:translateX(-600px);
+     transition-duration:0.9s;
+  }
+    .box3-color{
+      transform:translateX(600px);
+     transition-duration:0.9s;
+  }
+  
+  .box3-color{
+    
+    margin-right:0;
+  }
+  hr{
+  height:1px;
+  border:0;
+  background:#ccc;
+  margin: 20px 0;
+ }
+ .material-icons{
+  vertical-align: middle;
+ }
+ .appear{
+  height: 200px;
+  opacity:1;
+ }
+ .speed-box{
+  transform:translateX(0);
+ }
+ .content-galerie>.desapearBox{
+    display: none;
+  }
+.appearBox{
+  display: block;
+}
+ 
